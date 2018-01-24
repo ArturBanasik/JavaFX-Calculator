@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="300.0" style="-fx-background-color: #ddd;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <opaqueInsets>
+      <Insets bottom="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+   <effect>
+      <Reflection fraction="0.14" topOffset="10.0" topOpacity="0.12" />
+   </effect>
+   <children>
+      <HBox prefHeight="59.0" prefWidth="300.0">
+         <children>
+            <Button maxHeight="37.0" maxWidth="37.0" minHeight="37.0" minWidth="37.0" mnemonicParsing="false" onAction="#squareRoot" prefHeight="37.0" prefWidth="37.0" style="-fx-background-radius: 100;" text="x^2" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="RIGHT" maxHeight="37.0" maxWidth="37.0" minHeight="37.0" minWidth="37.0" mnemonicParsing="false" onAction="#sqrt" prefHeight="37.0" prefWidth="37.0" style="-fx-background-radius: 100;" text="√x" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="RIGHT" maxHeight="37.0" maxWidth="37.0" minHeight="37.0" minWidth="37.0" mnemonicParsing="false" onAction="#powerS" prefHeight="37.0" prefWidth="37.0" style="-fx-background-radius: 100;" text="x!" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="result" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="96.0" prefWidth="300.0" style="-fx-background-color: #eee;" textFill="#000000dc">
+         <font>
+            <Font name="Lato Italic" size="40.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="331.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="134.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="7" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="122.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="8" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="99.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="4" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="110.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-style: sold; -fx-border-color: #262626; -fx-border-width: 2;" stylesheets="@application.css" text="5" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button id="button" alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="118.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="9" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="124.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="6" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="112.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="1" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="109.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="2" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="169.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="3" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#equalsSign" prefHeight="114.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="=" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="92.0" prefWidth="75.0" style="-fx-border-color: #4d4d4d; -fx-border-radius: 0; -fx-border-style: solid; -fx-border-image-width: 2;" stylesheets="@style.css" text="*" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#division" prefHeight="171.0" prefWidth="75.0" style="-fx-border-color: #4d4d4d; -fx-border-radius: 0; -fx-border-style: solid; -fx-border-image-width: 2;" stylesheets="@style.css" text="/" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#substraction" prefHeight="193.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-image-width: 2; -fx-border-color: #4d4d4d; -fx-border-style: solid;" stylesheets="@style.css" text="-" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#adding" prefHeight="164.0" prefWidth="75.0" style="-fx-border-color: #4d4d4d; -fx-border-radius: 0; -fx-border-style: solid; -fx-border-image-width: 2;" stylesheets="@style.css" text="+" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="119.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="0" textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" mnemonicParsing="false" onAction="#onClickFloat" prefHeight="113.0" prefWidth="75.0" style="-fx-border-radius: 0; -fx-border-color: #262626; -fx-border-style: solid; -fx-border-width: 2;" stylesheets="@application.css" text="," textFill="#fffffff0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Lato Light" size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Button mnemonicParsing="false" onAction="#onClickC" prefHeight="30.0" prefWidth="300.0" stylesheets="@styleB1.css" text="←" textFill="#000000c6">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
